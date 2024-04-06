@@ -32,3 +32,4 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 30007
+#curl http://127.0.0.1:TUNNEL_PORT
