@@ -11,4 +11,3 @@ spec:
       storage: 1Mi
   storageClassName: slow
   volumeName: pv0003
-~                             
