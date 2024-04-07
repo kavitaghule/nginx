@@ -16,10 +16,10 @@ spec:
       - name: mycontainer
         image: centos:latest
         command: ["/bin/bash", "-c", "tail -f /dev/null"]
-        volumeMounts:
-        - name: myvolume
-          mountPath: /mnt/data  # Adjust the mount path as per your requirement
-      volumes:
-      - name: myvolume
-        hostPath:
-          path: /mnt/data  # Adjust the host path as per your requirement
+#        volumeMounts:
+#        - name: myvolume
+#          mountPath: /mnt/data  # Adjust the mount path as per your requirement
+#      volumes:
+#      - name: myvolume
+#        hostPath:
+#          path: /mnt/data  # Adjust the host path as per your requirement
