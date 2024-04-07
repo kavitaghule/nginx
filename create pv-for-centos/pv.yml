@@ -12,7 +12,3 @@ spec:
   storageClassName: slow
   hostPath:
     path: /tmp
-~                                                                                                                                
-~                                                                                                                                
-~                                                                                                                                
-~                            
