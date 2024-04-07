@@ -13,6 +13,19 @@
 #kubectl apply -f pod.yaml
 #kubectl exec -it app -- df -h /data
 
+# ways to create driver
+static provisioning Manually create PV manifest files: You can manually create PV manifest files 
+specifying the details of the volume, such as type, capacity, access modes, and the storage backend 
+(e.g., AWS EBS, GCP Persistent Disk, NFS).
+dynamic provisioning:  Popular dynamic provisioning solutions include:
+AWS EBS CSI Driver
+GCP Persistent Disk CSI Driver
+NFS CSI Driver
+CSI Drivers: Container Storage Interface (CSI) Drivers allow third-party storage providers to integrate with Kubernetes.
+Local Volumes: Kubernetes supports local storage provisioning for PVs using hostPath volumes.
+Manual Provisioning: Administrators can manually provision storage outside of Kubernetes and then 
+manually create PVs referencing the pre-provisioned storage.
+Cloud Provider Services: Cloud providers offer managed storage services that can be used as PVs in Kubernetes.
 
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
